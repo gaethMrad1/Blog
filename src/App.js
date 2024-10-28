@@ -22,7 +22,7 @@ function App() {
       <Header />
       <postsAndCommentsContext.Provider value={values}>
         <Routes>
-          <Route path="" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
           <Route path=":postId" element={<PostDetails />}/>
         </Routes>
       </postsAndCommentsContext.Provider>
