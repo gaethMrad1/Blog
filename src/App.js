@@ -22,8 +22,8 @@ function App() {
       <Header />
       <postsAndCommentsContext.Provider value={values}>
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path=":postId" element={<PostDetails />}/>
+          <Route path="/Blog" element={<Home />}/>
+          <Route path="/post/:postId" element={<PostDetails />}/>
         </Routes>
       </postsAndCommentsContext.Provider>
     </div>

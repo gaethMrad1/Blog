@@ -20,7 +20,7 @@ function Home() {
                 return <div key={post.id} className="card">
                     <h2>{post.title}</h2>
                     <p>{post.body}</p>
-                    <Link to={`/${post.id}`}>details</Link>
+                    <Link to={`/post/${post.id}`}>details</Link>
                 </div>
             })}
             </div>
